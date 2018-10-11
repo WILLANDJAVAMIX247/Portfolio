@@ -24,22 +24,8 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -51,27 +37,49 @@
         <!-----jumbotron----->
         <div class="jumbotron jumbotron-fluid" id="jumboStyle">
           <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 class="display-4">Coding Codex</h1>
           </div>
         </div>
         <!-----projects------->
-        <div class="container">
-          <div class="col-4"><a href="https://codepen.io/willandjavamix247/pen/yxdLvK">creature</a> </div>
-        
+        <div id="container">
           <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
+          <div class="col-4"><a href="https://codepen.io/willandjavamix247/pen/yxdLvK" id="creature">CssCreature</a></div>
+          <div class="col-4"><a href="https://willandjavamix247.github.io/tutorialWebpage/" id="tutorialWebpage">TutorialWebpage</a></div>
+          <div class="col-4"><a href="https://sports-team-api.firebaseapp.com" id="apiProject">ApiProject</a></div>
         </div>
         <!---about me---->
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <P id="aboutMe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius pariatur assumenda modi itaque, animi odio natus quibusdam inventore hic eos quisquam dolore ratione ducimus iure iusto architecto saepe, esse tempora.</P>
+              <P id="aboutMe">My name is William Bailey IV and I will always be a student of coding. 
+                my mission is to become a coder with the hopes of bettering my future as a result of 
+                my hard work at Eleven Fifty Academy.</P>
             </div>
           </div>
-
+      <div id="Forms">
+        </div id="contactForm>
         </div>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            <label class="required" for="name"></label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" placeholder="Name Here" /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="email"></label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Email Here" /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="message" ></label><br />
+            <textarea id="message" class="input" name="message" rows="6" cols="30" placeholder="Message Here"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+          </div>
+            
+            <input id="submit_button" type="submit" value="Send email" />
+        </form>
+      </div>
+    </div>
 
 </body>
 </html>
