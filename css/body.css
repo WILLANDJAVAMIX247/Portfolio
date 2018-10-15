@@ -1,3 +1,7 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/66/24/15/66241532e0c8ac41d76cf994bc12d243.gif);
+    background-image:    url(https://cdn.shopify.com/s/files/1/0950/8264/files/Stunning_GIFs_To_Stare_At_While_You_re_High_On_Marijuana_4fb5730b-1373-43d5-92d3-f4dcccfb33c3_grande.gif?v=1500590458);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center 
+
 }

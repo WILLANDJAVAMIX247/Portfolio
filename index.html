@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,77 +9,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
         <!---navbar--->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"id="navStyle">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto"id="liststyle">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>                 
+              </ul>
+            </div>
+          </nav>
         <!-----jumbotron----->
-        <div class="jumbotron jumbotron-fluid" id="jumboStyle">
-          <div class="container">
-            <h1 class="display-4">Coding Codex</h1>
-          </div>
-        </div>
+        
         <!-----projects------->
         <div id="container">
           <div class="col-4"></div>
-          <div class="col-4"><a href="https://codepen.io/willandjavamix247/pen/yxdLvK" id="creature">CssCreature</a></div>
+          <div class="col-4"><a href="https://codepen.io/willandjavamix247/pen/yxdLvK" id="creature">CSS Creature</a></div>
           <div class="col-4"><a href="https://willandjavamix247.github.io/tutorialWebpage/" id="tutorialWebpage">TutorialWebpage</a></div>
           <div class="col-4"><a href="https://sports-team-api.firebaseapp.com" id="apiProject">ApiProject</a></div>
         </div>
-        <!---about me---->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <P id="aboutMe">My name is William Bailey IV and I will always be a student of coding. 
+        <br />
+
+      <div id="foot">          
+             
+        <footer class="title-banner py-4 bg-success text-white" id="title-banner">
+          <div class="container">
+            <div class="row">
+              <div id="aboutme"
+              <h4>About Me:</h4>
+              <p>My name is William Bailey IV and I will always be a student of coding. 
                 my mission is to become a coder with the hopes of bettering my future as a result of 
-                my hard work at Eleven Fifty Academy.</P>
+                my hard work at Eleven Fifty Academy.</p>
+              </div>
+              
+              <br>
+              <br />
+              <div id="emailme">
+              <h4>Email Me:</h4>
+              <form class="messages" id="messages" method="POST" action="https://formspree.io/willandjavamix247@gmail.com">
+                <input type="email" name="email" placeholder="Your email">
+                <br>
+                <textarea name="message" placeholder="Your message"></textarea>
+                <br>
+                <button type="submit">Send</button>
+              </form>
+              </div>
             </div>
           </div>
-      <div id="Forms">
-        <div id="contactForm>
-        <div>
-          <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-            <div class="row">
-              <label class="required" for="name"></label><br />
-              <input id="name" class="input" name="name" type="text" value="" size="30" placeholder="Name Here" /><br />
-              <span id="name_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-              <label class="required" for="email"></label><br />
-              <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Email Here" /><br />
-              <span id="email_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-              <label class="required" for="message" ></label><br />
-              <textarea id="message" class="input" name="message" rows="6" cols="30" placeholder="Message Here"></textarea><br />
-              <span id="message_validation" class="error_message"></span>
-            </div>
-            <input id="submit_button" type="submit" value="Send email" />
-        </form>
+        </footer>
       </div>
-    </div>
 
 </body>
 </html>

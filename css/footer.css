@@ -1,0 +1,15 @@
+#title-banner {
+    margin-top: 220px;
+    
+
+}
+#aboutme {
+    float: left;
+    width: 200px;
+    
+}
+#emailme {
+    float: right;
+    width: calc(100% - 200px);
+    
+}
